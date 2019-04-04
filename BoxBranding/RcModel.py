@@ -8,7 +8,7 @@ machinebrand = getMachineBrand()
 brandoem = getBrandOEM()
 
 
-class RcModelboxbranding:
+class RcModel:
 	def __init__(self):
 		pass
 
@@ -40,7 +40,7 @@ class RcModelboxbranding:
 					if ret is not None:
 						return ret
 		except IOError as e:
-			print "[RcModelboxbranding] IOError: '/etc/enigma2/settings' cannot be opened"
+			print "[RcModel] IOError: '/etc/enigma2/settings' cannot be opened"
 		return None
 
 	def getRcFolder(self, GetDefault=False):
@@ -331,4 +331,4 @@ class RcModelboxbranding:
 		remotefolder = self.getRcFolder()
 		return baselocation + remotefolder + '/'
 
-rc_model = RcModelboxbranding()
+rc_model = RcModel()
