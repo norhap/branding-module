@@ -154,6 +154,12 @@ AC_ARG_WITH(machinebrand,
 AC_SUBST(MACHINE_BRAND)
 AC_DEFINE_UNQUOTED(MACHINE_BRAND,"$MACHINE_BRAND",[machine name])
 
+AC_ARG_WITH(machinexpeedlx3
+	[  --with-machinebrand=NAME brand name [[Vu,Xtrend,...]]],
+	[MACHINE_BRAND="$withval"],[MACHINE_BRAND="GI"])
+AC_SUBST(MACHINE_BRAND)
+AC_DEFINE_UNQUOTED(MACHINE_BRAND,"$MACHINE_BRAND",[machine name])
+
 AC_ARG_WITH(machinebuild,
 	[  --with-machinebuild=NAME build name [[inihdx,inihdp,...]]],
 	[MACHINE_BUILD="$withval"],[MACHINE_BUILD="inihdx"])
