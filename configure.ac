@@ -155,7 +155,7 @@ AC_SUBST(MACHINE_BRAND)
 AC_DEFINE_UNQUOTED(MACHINE_BRAND,"$MACHINE_BRAND",[machine name])
 
 AC_ARG_WITH(machinexpeedlx3
-	[  --with-machinebrand=NAME brand name [[Vu,Xtrend,...]]],
+	[  --with-machinexpeedlx3=NAME brand name [[Vu,Xtrend,...]]],
 	[MACHINE_BRAND="$withval"],[MACHINE_BRAND="GI"])
 AC_SUBST(MACHINE_BRAND)
 AC_DEFINE_UNQUOTED(MACHINE_BRAND,"$MACHINE_BRAND",[machine name])
