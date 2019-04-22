@@ -1,4 +1,4 @@
-from boxbranding import getBoxType, getMachineBrand, getMachineBuild, getBrandOEM, getMachineXpeedlx3
+from boxbranding import getBoxType, getMachineBrand, getMachineBuild, getBrandOEM
 from Tools.StbHardware import getFPVersion
 import os
 
@@ -6,7 +6,7 @@ boxtype = getBoxType()
 machinebuild = getMachineBuild()
 machinebrand = getMachineBrand()
 brandoem = getBrandOEM()
-machinexpeedlx3 = getMachineXpeedlx3()
+
 
 class RcModel:
 	def __init__(self):
