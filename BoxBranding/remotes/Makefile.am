@@ -408,7 +408,7 @@ if VENTON
 SUBDIRS += ini0 ini1 ini2
 endif
 
-if XPEEDLX3
+if INI
 SUBDIRS += ini0 ini1 ini2 ini3 ini4 ini5 ini6 ini7 ini8
 endif
 
