@@ -150,7 +150,7 @@ AC_DEFINE_UNQUOTED(HAVE_CI,"$HAVE_CI",[ci])
 
 AC_ARG_WITH(machinebrand,
 	[  --with-machinebrand=NAME brand name [[Vu,Xtrend,...]]],
-	[MACHINE_BRAND="$withval"],[MACHINE_BRAND="Vu+"])
+	[MACHINE_BRAND="$withval"],[MACHINE_BRAND="INI"])
 AC_SUBST(MACHINE_BRAND)
 AC_DEFINE_UNQUOTED(MACHINE_BRAND,"$MACHINE_BRAND",[machine name])
 
