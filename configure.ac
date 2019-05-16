@@ -148,11 +148,11 @@ AC_ARG_WITH(ci,
 AC_SUBST(HAVE_CI)
 AC_DEFINE_UNQUOTED(HAVE_CI,"$HAVE_CI",[ci])
 
-AC_ARG_WITH(boxbrand,
-	[  --with-boxbrand=NAME box brand [[none,dreambox...]]],
-	[BOXBRAND="$withval"],[BOXBRAND="dreambox"])
-AC_SUBST(BOXBRAND)
-AC_DEFINE_UNQUOTED(BOXBRAND,"$BOXBRAND",[box brand])
+AC_ARG_WITH(machinebrand,
+	[  --with-machinebrand=NAME brand name [[Vu,Xtrend,...]]],
+	[MACHINE_BRAND="$withval"],[MACHINE_BRAND="Receptor"])
+AC_SUBST(MACHINE_BRAND)
+AC_DEFINE_UNQUOTED(MACHINE_BRAND,"$MACHINE_BRAND",[machine name])
 
 AC_ARG_WITH(machinebuild,
 	[  --with-machinebuild=NAME build name [[inihdx,inihdp,...]]],
