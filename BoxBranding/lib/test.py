@@ -1,7 +1,6 @@
 import boxbranding
 print "getMachineBuild=%s<" %boxbranding.getMachineBuild()
 print "getMachineProcModel=%s<" %boxbranding.getMachineProcModel()
-print "getMachineBrand=%s<" %boxbranding.getMachineBrand()
 print "getMachineName=%s<" %boxbranding.getMachineName()
 print "getMachineMtdKernel=%s<" %boxbranding.getMachineMtdKernel()
 print "getMachineKernelFile=%s<" %boxbranding.getMachineKernelFile()

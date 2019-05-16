@@ -12,7 +12,6 @@ char *ReadProcEntry(char *filename);
 
 char *_getBoxType();
 char *_getMachineName();
-char *_getMachineBrand();
 char *_getBrandOEM();
 char *_getDriverDate();
 char *_getImageVersion();

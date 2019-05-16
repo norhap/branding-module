@@ -406,11 +406,6 @@ char *_getMachineName()
 	return strdup(MACHINE_NAME);
 }
 
-char *_getMachineBrand()
-{
-	return strdup(MACHINE_BRAND);
-}
-
 char *_getBrandOEM()
 {
 	return strdup(BRAND_OEM);

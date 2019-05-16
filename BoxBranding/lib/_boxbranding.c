@@ -19,7 +19,6 @@ static PyObject* name(PyObject* self, PyObject* args) \
 MAKE_STRING_FUNCTION(getMachineBuild)
 MAKE_STRING_FUNCTION(getMachineMake)
 MAKE_STRING_FUNCTION(getMachineProcModel)
-MAKE_STRING_FUNCTION(getMachineBrand)
 MAKE_STRING_FUNCTION(getMachineName)
 MAKE_STRING_FUNCTION(getMachineMtdRoot)
 MAKE_STRING_FUNCTION(getMachineKernelFile)
@@ -62,7 +61,6 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getMachineBuild", getMachineBuild, METH_NOARGS, NULL },
 	{ "getMachineMake", getMachineMake, METH_NOARGS, NULL },
 	{ "getMachineProcModel", getMachineProcModel, METH_NOARGS, NULL },
-	{ "getMachineBrand", getMachineBrand, METH_NOARGS, NULL },
 	{ "getMachineName", getMachineName, METH_NOARGS, NULL },
 	{ "getMachineMtdRoot", getMachineMtdRoot, METH_NOARGS, NULL },
 	{ "getMachineKernelFile", getMachineKernelFile, METH_NOARGS, NULL },
