@@ -94,8 +94,8 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getHaveHDMIinFHD", getHaveHDMIinFHD, METH_NOARGS, NULL },
 	{ "getHaveWOL", getHaveWOL, METH_NOARGS, NULL },
 	{ "getHaveWWOL", getHaveWWOL, METH_NOARGS, NULL },
-	{ "getHaveTranscoding", getHaveTranscoding1, METH_NOARGS, NULL },
-	{ "getHaveMultiTranscoding", getHaveTranscoding2, METH_NOARGS, NULL },
+	{ "getHaveTranscoding", getHaveTranscoding, METH_NOARGS, NULL },
+	{ "getHaveMultiTranscoding", getHaveMultiTranscoding, METH_NOARGS, NULL },
 	{ "getHaveCI", getHaveCI, METH_NOARGS, NULL },
 	{ NULL, NULL, 0, NULL }
 };
