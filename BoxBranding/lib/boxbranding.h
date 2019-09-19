@@ -46,8 +46,8 @@ char *_getHaveHDMIinHD();
 char *_getHaveHDMIinFHD();
 char *_getHaveWOL();
 char *_getHaveWWOL();
-char *_getHaveTranscoding1();
-char *_getHaveTranscoding2();
+char *_getHaveTranscoding();
+char *_getHaveMultiTranscoding();
 char *_getHaveCI();
 
 #endif
