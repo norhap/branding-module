@@ -143,16 +143,16 @@ AC_SUBST(HAVE_WWOL)
 AC_DEFINE_UNQUOTED(HAVE_WWOL,"$HAVE_WWOL",[wwol])
 
 AC_ARG_WITH(transcoding,
-	[  --with-transcoding=NAME transcoding [[transcoding,...]]],
-	[HAVE_TRANSCODING="$withval"],[HAVE_TRANSCODING="true"])
-AC_SUBST(HAVE_TRANSCODING)
-AC_DEFINE_UNQUOTED(HAVE_TRANSCODING,"$HAVE_TRANSCODING",[transcoding])
+	[  --with-transcoding=NAME transcoding [[transcoding......]]],
+	[HAVE_TRANSCODING_TYPE1="$withval"],[HAVE_TRANSCODING_TYPE1="true"])
+AC_SUBST(HAVE_TRANSCODING_TYPE1)
+AC_DEFINE_UNQUOTED(HAVE_TRANSCODING_TYPE1,"$HAVE_TRANSCODING_TYPE1",[transcoding])
 
 AC_ARG_WITH(multitranscoding,
-	[  --with-multitranscoding=NAME multitranscoding [[multitranscoding,...]]],
-	[HAVE_MULTITRANSCODING="$withval"],[HAVE_MULTITRANSCODING="true"])
-AC_SUBST(HAVE_MULTITRANSCODING)
-AC_DEFINE_UNQUOTED(HAVE_MULTITRANSCODING,"$HAVE_MULTITRANSCODING",[multitranscoding])
+	[  --with-multitranscoding=NAME multitranscoding [[multitranscoding......]]],
+	[HAVE_TRANSCODING_TYPE2="$withval"],[HAVE_TRANSCODING_TYPE2="true"])
+AC_SUBST(HAVE_TRANSCODING_TYPE2)
+AC_DEFINE_UNQUOTED(HAVE_TRANSCODING_TYPE2,"$HAVE_TRANSCODING_TYPE2",[multitranscoding])
 
 AC_ARG_WITH(ci,
 	[  --with-ci=NAME ci [[ci......]]],
