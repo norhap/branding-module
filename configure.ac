@@ -29,10 +29,16 @@ AC_SUBST(BOXTYPE)
 AC_DEFINE_UNQUOTED(BOXTYPE,"$BOXTYPE",[box type])
 
 AC_ARG_WITH(oever,
-	[  --with-oever=NAME oe name [[OE-A1,OE-A2,...]]],
-	[OE_VER="$withval"],[OE_VER="OE-Alliance 2.0"])
+	[  --with-oever=NAME oe name [[7.1,...]]],
+	[OE_VER="$withval"],[OE_VER=""])
 AC_SUBST(OE_VER)
 AC_DEFINE_UNQUOTED(OE_VER,"$OE_VER",[oe name])
+
+AC_ARG_WITH(boxbrand,
+	[  --with-boxbrand=NAME box brand [[dreambox,...]]],
+	[BOXBRAND="$withval"],[BOXBRAND=""])
+AC_SUBST(BOXBRAND)
+AC_DEFINE_UNQUOTED(BOXBRAND,"$BOXBRAND",[box brand])
 
 AC_ARG_WITH(distro,
 	[  --with-distro=NAME distro name [[openvix,openatv,...]]],
@@ -57,6 +63,12 @@ AC_ARG_WITH(display-type,
 	[DISPLAY_TYPE="$withval"],[DISPLAY_TYPE="textlcd"])
 AC_SUBST(DISPLAY_TYPE)
 AC_DEFINE_UNQUOTED(DISPLAY_TYPE,"$DISPLAY_TYPE",[display type])
+
+AC_ARG_WITH(flash-type,
+	[  --with-flash-type=NAME flash type [[smallflash,...]]],
+	[HAVE_SMALLFLASH="$withval"],[HAVE_SMALLFLASH="true"])
+AC_SUBST(HAVE_SMALLFLASH)
+AC_DEFINE_UNQUOTED(HAVE_SMALLFLASH,"$HAVE_SMALLFLASH",[smallflash])
 
 AC_ARG_WITH(hdmi,
 	[  --with-hdmi=NAME hdmi [[hdmi......]]],
