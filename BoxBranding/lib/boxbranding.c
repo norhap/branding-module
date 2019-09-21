@@ -569,14 +569,14 @@ char *_getHaveWWOL()
 	return strdup(HAVE_WWOL);
 }
 
-char *_getHaveTranscoding1()
+char *_getHaveTranscoding()
 {
-	return strdup(HAVE_TRANSCODING_TYPE1);
+	return strdup(HAVE_TRANSCODING);
 }
 
-char *_getHaveTranscoding2()
+char *_getHaveMultiTranscoding()
 {
-	return strdup(HAVE_TRANSCODING_TYPE2);
+	return strdup(HAVE_MULTITRANSCODING);
 }
 
 char *_getHaveCI()
