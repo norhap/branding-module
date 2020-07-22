@@ -274,17 +274,23 @@ AC_ARG_WITH(rcname,
 AC_SUBST(RCNAME)
 AC_DEFINE_UNQUOTED(RCNAME,"$RCNAME",[rc name])
 
+AC_ARG_WITH(blindscanbinary,
+	[  --with-blindscanbinary=NAME blindscan binary [[blindscan,...]]],
+	[BLINDSCANBINARY="$withval"],[BLINDSCANBINARY=""])
+AC_SUBST(BLINDSCANBINARY)
+AC_DEFINE_UNQUOTED(BLINDSCANBINARY,"$BLINDSCANBINARY",[blindscan binary])
+
 AC_ARG_WITH(dboxlcd,
 	[  --with-dboxlcd=NAME dboxlcd [[dboxlcd......]]],
 	[SUPPORT_DBOXLCD="$withval"],[SUPPORT_DBOXLCD="True"])
 AC_SUBST(SUPPORT_DBOXLCD)
 AC_DEFINE_UNQUOTED(SUPPORT_DBOXLCD,"$SUPPORT_DBOXLCD",[dboxlcd])
 
-AC_ARG_WITH(blindscanbinary,
-	[  --with-blindscanbinary=NAME blindscan binary [[blindscan,...]]],
-	[BLINDSCANBINARY="$withval"],[BLINDSCANBINARY=""])
-AC_SUBST(BLINDSCANBINARY)
-AC_DEFINE_UNQUOTED(BLINDSCANBINARY,"$BLINDSCANBINARY",[blindscan binary])
+AC_ARG_WITH(vfd-symbol,
+	[  --with-vfd-symbol=NAME vfd symbol [[vfdsymbol,...]]],
+	[HAVE_VFDSYMBOL="$withval"],[HAVE_VFDSYMBOL="True"])
+AC_SUBST(HAVE_VFDSYMBOL)
+AC_DEFINE_UNQUOTED(HAVE_VFDSYMBOL,"$HAVE_VFDSYMBOL",[vfdsymbol])
 
 AC_ARG_WITH(debug,
 	AS_HELP_STRING([--without-debug],[disable debugging code]),
