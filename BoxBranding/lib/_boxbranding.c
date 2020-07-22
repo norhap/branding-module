@@ -58,8 +58,9 @@ MAKE_STRING_FUNCTION(getHaveCI)
 MAKE_STRING_FUNCTION(getRCIDNum)
 MAKE_STRING_FUNCTION(getRCType)
 MAKE_STRING_FUNCTION(getRCName)
-MAKE_STRING_FUNCTION(getDBoxLCD)
 MAKE_STRING_FUNCTION(getBlindscanBin)
+MAKE_STRING_FUNCTION(getDBoxLCD)
+MAKE_STRING_FUNCTION(getHaveVFDSymbol)
 
 /* Module specification */
 static PyMethodDef boxbrandingMethods[] = {
@@ -105,8 +106,9 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getRCIDNum", getRCIDNum, METH_NOARGS, NULL },
 	{ "getRCType", getRCType, METH_NOARGS, NULL },
 	{ "getRCName", getRCName, METH_NOARGS, NULL },
-	{ "getDBoxLCD", getDBoxLCD, METH_NOARGS, NULL },
 	{ "getBlindscanBin", getBlindscanBin, METH_NOARGS, NULL },
+	{ "getDBoxLCD", getDBoxLCD, METH_NOARGS, NULL },
+	{ "getHaveVFDSymbol", getHaveVFDSymbol, METH_NOARGS, NULL },
 	{ NULL, NULL, 0, NULL }
 };
 

@@ -704,15 +704,24 @@ char *_getRCName()
 {
 	return strdup(RCNAME);
 }
+
+char *_getBlindscanBin()
+{
+	return strdup(BLINDSCANBINARY);
+}
+
 char *_getDBoxLCD()
 {
 	if(strcmp(SUPPORT_DBOXLCD, "False") == 0)
 		return strdup("");
 	return strdup(SUPPORT_DBOXLCD);
 }
-char *_getBlindscanBin()
+
+char *_getHaveVFDSymbol()
 {
-	return strdup(BLINDSCANBINARY);
+	if(strcmp(HAVE_VFDSYMBOL, "False") == 0)
+		return strdup("");
+	return strdup(HAVE_VFDSYMBOL);
 }
 
 char *_getMachineProcModel() // return just value from proc entry

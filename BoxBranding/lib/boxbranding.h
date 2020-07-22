@@ -52,7 +52,8 @@ char *_getHaveCI();
 char *_getRCIDNum();
 char *_getRCType();
 char *_getRCName();
-char *_getDBoxLCD();
 char *_getBlindscanBin();
+char *_getDBoxLCD();
+char *_getHaveVFDSymbol();
 
 #endif
