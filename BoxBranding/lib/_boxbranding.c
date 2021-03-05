@@ -55,6 +55,7 @@ MAKE_STRING_FUNCTION(getHaveWWOL)
 MAKE_STRING_FUNCTION(getHaveTranscoding)
 MAKE_STRING_FUNCTION(getHaveMultiTranscoding)
 MAKE_STRING_FUNCTION(getHaveCI)
+MAKE_STRING_FUNCTION(getRCIDNum)
 
 /* Module specification */
 static PyMethodDef boxbrandingMethods[] = {
@@ -97,6 +98,7 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getHaveTranscoding", getHaveTranscoding, METH_NOARGS, NULL },
 	{ "getHaveMultiTranscoding", getHaveMultiTranscoding, METH_NOARGS, NULL },
 	{ "getHaveCI", getHaveCI, METH_NOARGS, NULL },
+	{ "getRCIDNum", getRCIDNum, METH_NOARGS, NULL },
 	{ NULL, NULL, 0, NULL }
 };
 

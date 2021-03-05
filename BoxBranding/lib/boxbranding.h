@@ -49,5 +49,6 @@ char *_getHaveWWOL();
 char *_getHaveTranscoding();
 char *_getHaveMultiTranscoding();
 char *_getHaveCI();
+char *_getRCIDNum();
 
 #endif

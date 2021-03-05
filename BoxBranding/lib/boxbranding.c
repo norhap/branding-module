@@ -651,6 +651,11 @@ char *_getMachineUBINIZE()
 	return strdup(UBINIZE_ARGS);
 }
 
+char *_getRCIDNum()
+{
+	return strdup(RCIDNUM);
+}
+
 char *_getMachineProcModel() // return just value from proc entry
 {
 	FILE *boxtype_file;
