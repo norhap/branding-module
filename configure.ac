@@ -60,7 +60,7 @@ AC_DEFINE_UNQUOTED(ARCH_TYPE,"$ARCH_TYPE",[arch name])
 
 AC_ARG_WITH(display-type,
 	[  --with-display-type=NAME display type [[7segment,textlcd...]]],
-	[DISPLAY_TYPE="$withval"],[DISPLAY_TYPE="textlcd"])
+	[DISPLAY_TYPE="$withval"],[DISPLAY_TYPE=""])
 AC_SUBST(DISPLAY_TYPE)
 AC_DEFINE_UNQUOTED(DISPLAY_TYPE,"$DISPLAY_TYPE",[display type])
 
