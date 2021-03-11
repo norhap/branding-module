@@ -656,6 +656,16 @@ char *_getRCIDNum()
 	return strdup(RCIDNUM);
 }
 
+char *_getRCType()
+{
+	return strdup(RCTYPE);
+}
+
+char *_getRCName()
+{
+	return strdup(RCNAME);
+}
+
 char *_getMachineProcModel() // return just value from proc entry
 {
 	FILE *boxtype_file;

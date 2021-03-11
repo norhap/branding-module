@@ -268,6 +268,18 @@ AC_ARG_WITH(rcidnum,
 AC_SUBST(RCIDNUM)
 AC_DEFINE_UNQUOTED(RCIDNUM,"$RCIDNUM",[rc id number])
 
+AC_ARG_WITH(rctype,
+	[  --with-rctype=NUMBER rc type [[0,...]]],
+	[RCTYPE="$withval"],[RCTYPE=""])
+AC_SUBST(RCTYPE)
+AC_DEFINE_UNQUOTED(RCTYPE,"$RCTYPE",[rc type])
+
+AC_ARG_WITH(rcname,
+	[  --with-rcname=NAME rc name [[dmm,...]]],
+	[RCNAME="$withval"],[RCNAME=""])
+AC_SUBST(RCNAME)
+AC_DEFINE_UNQUOTED(RCNAME,"$RCNAME",[rc name])
+
 AC_ARG_WITH(debug,
 	AS_HELP_STRING([--without-debug],[disable debugging code]),
 	[with_debug="$withval"],[with_debug="yes"])

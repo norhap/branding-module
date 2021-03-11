@@ -50,5 +50,7 @@ char *_getHaveTranscoding();
 char *_getHaveMultiTranscoding();
 char *_getHaveCI();
 char *_getRCIDNum();
+char *_getRCType();
+char *_getRCName();
 
 #endif
