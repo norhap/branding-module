@@ -52,5 +52,6 @@ char *_getHaveCI();
 char *_getRCIDNum();
 char *_getRCType();
 char *_getRCName();
+char *_getDBoxLCD();
 
 #endif

@@ -665,6 +665,12 @@ char *_getRCName()
 {
 	return strdup(RCNAME);
 }
+char *_getDBoxLCD()
+{
+	if(strcmp(SUPPORT_DBOXLCD, "False") == 0)
+		return strdup("");
+	return strdup(SUPPORT_DBOXLCD);
+}
 
 char *_getMachineProcModel() // return just value from proc entry
 {
