@@ -288,12 +288,12 @@ char *_getMachineName()
 			if(startsWith(boxtype_name, "10"))
 			{
 				free(boxtype_name);
-				return strdup("SF8008 4K Single");
+				return strdup("SF8008 4K UHD SINGLE");
 			}
 			else if(startsWith(boxtype_name, "11"))
 			{
 				free(boxtype_name);
-				return strdup("SF8008 4K Twin");
+				return strdup("SF8008 4K UHD TWIN");
 			}
 			else
 			{
