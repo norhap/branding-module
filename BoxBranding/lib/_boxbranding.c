@@ -59,6 +59,7 @@ MAKE_STRING_FUNCTION(getRCIDNum)
 MAKE_STRING_FUNCTION(getRCType)
 MAKE_STRING_FUNCTION(getRCName)
 MAKE_STRING_FUNCTION(getDBoxLCD)
+MAKE_STRING_FUNCTION(getBlindscanBin)
 
 /* Module specification */
 static PyMethodDef boxbrandingMethods[] = {
@@ -105,6 +106,7 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getRCType", getRCType, METH_NOARGS, NULL },
 	{ "getRCName", getRCName, METH_NOARGS, NULL },
 	{ "getDBoxLCD", getDBoxLCD, METH_NOARGS, NULL },
+	{ "getBlindscanBin", getBlindscanBin, METH_NOARGS, NULL },
 	{ NULL, NULL, 0, NULL }
 };
 

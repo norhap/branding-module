@@ -710,6 +710,10 @@ char *_getDBoxLCD()
 		return strdup("");
 	return strdup(SUPPORT_DBOXLCD);
 }
+char *_getBlindscanBin()
+{
+	return strdup(BLINDSCANBINARY);
+}
 
 char *_getMachineProcModel() // return just value from proc entry
 {

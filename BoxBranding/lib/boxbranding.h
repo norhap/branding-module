@@ -53,5 +53,6 @@ char *_getRCIDNum();
 char *_getRCType();
 char *_getRCName();
 char *_getDBoxLCD();
+char *_getBlindscanBin();
 
 #endif
