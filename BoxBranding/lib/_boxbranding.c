@@ -27,7 +27,7 @@ MAKE_STRING_FUNCTION(getMachineMtdKernel)
 MAKE_STRING_FUNCTION(getMachineMKUBIFS)
 MAKE_STRING_FUNCTION(getMachineUBINIZE)
 MAKE_STRING_FUNCTION(getBoxType)
-MAKE_STRING_FUNCTION(getBrandOEM)
+MAKE_STRING_FUNCTION(getBrand)
 MAKE_STRING_FUNCTION(getOEVersion)
 MAKE_STRING_FUNCTION(getDriverDate)
 MAKE_STRING_FUNCTION(getImageVersion)
@@ -74,7 +74,7 @@ static PyMethodDef boxbrandingMethods[] = {
 	{ "getMachineMKUBIFS", getMachineMKUBIFS, METH_NOARGS, NULL },
 	{ "getMachineUBINIZE", getMachineUBINIZE, METH_NOARGS, NULL },
 	{ "getBoxType", getBoxType, METH_NOARGS, NULL },
-	{ "getBrandOEM", getBrandOEM, METH_NOARGS, NULL },
+	{ "getBrand", getBrand, METH_NOARGS, NULL },
 	{ "getOEVersion", getOEVersion, METH_NOARGS, NULL },
 	{ "getDriverDate", getDriverDate, METH_NOARGS, NULL },
 	{ "getImageVersion", getImageVersion, METH_NOARGS, NULL },

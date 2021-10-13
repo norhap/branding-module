@@ -445,9 +445,9 @@ char *_getMachineName()
 	return strdup(MACHINE_NAME);
 }
 
-char *_getBrandOEM()
+char *_getBrand()
 {
-	return strdup(BRAND_OEM);
+	return strdup(MACHINE_BRAND);
 }
 
 char *_getDriverDate()

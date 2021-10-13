@@ -34,12 +34,6 @@ AC_ARG_WITH(oever,
 AC_SUBST(OE_VER)
 AC_DEFINE_UNQUOTED(OE_VER,"$OE_VER",[oe name])
 
-AC_ARG_WITH(boxbrand,
-	[  --with-boxbrand=NAME box brand [[dreambox,...]]],
-	[BOXBRAND="$withval"],[BOXBRAND=""])
-AC_SUBST(BOXBRAND)
-AC_DEFINE_UNQUOTED(BOXBRAND,"$BOXBRAND",[box brand])
-
 AC_ARG_WITH(distro,
 	[  --with-distro=NAME distro name [[openvix,openatv,...]]],
 	[DISTRO="$withval"],[DISTRO="egami"])
@@ -178,11 +172,11 @@ AC_ARG_WITH(machinename,
 AC_SUBST(MACHINE_NAME)
 AC_DEFINE_UNQUOTED(MACHINE_NAME,"$MACHINE_NAME",[machine name])
 
-AC_ARG_WITH(brandoem,
-	[  --with-brandoem=NAME brand oem [[DAGS,DMM,...]]],
-	[BRAND_OEM="$withval"],[BRAND_OEM="dags"])
-AC_SUBST(BRAND_OEM)
-AC_DEFINE_UNQUOTED(BRAND_OEM,"$BRAND_OEM",[brand oem])
+AC_ARG_WITH(brandname,
+	[  --with-brandname=NAME brand name [[DAGS,DMM,...]]],
+	[MACHINE_BRAND="$withval"],[MACHINE_BRAND="dags"])
+AC_SUBST(MACHINE_BRAND)
+AC_DEFINE_UNQUOTED(MACHINE_BRAND,"$MACHINE_BRAND",[brand name])
 
 AC_ARG_WITH(imageversion,
 	[  --with-imageversion=NAME version number [[3.0]]],
