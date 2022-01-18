@@ -52,16 +52,15 @@ for arg in sys.argv[1:]:
 		parser.parse(arg)
 
 	attrlist = list(attrlist)
-	attrlist.sort(key=lambda a: a[0])
+	attrlist.sorted(key=lambda a: a[0])
 
 	for (k,c) in attrlist:
-		print
-		print '#: ' + arg
+		print('#: ' + arg)
 		string.replace(k, "\\n", "\"\n\"")
 		if c:
 			for l in c.split('\n'):
-				print "#. ", l
-		print 'msgid "' + str(k) + '"'
-		print 'msgstr ""'
+				print("#. ", l)
+		print('msgid "' + str(k) + '"')
+		print('msgstr ""')
 
 	attrlist = set()
