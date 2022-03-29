@@ -724,6 +724,11 @@ char *_getHaveVFDSymbol()
 	return strdup(HAVE_VFDSYMBOL);
 }
 
+char *_getSoCFamily()
+{
+	return strdup(SOCFAMILY);
+}
+
 char *_getMachineProcModel() // return just value from proc entry
 {
 	FILE *boxtype_file;
