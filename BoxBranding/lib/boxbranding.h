@@ -55,5 +55,6 @@ char *_getRCName();
 char *_getBlindscanBin();
 char *_getDBoxLCD();
 char *_getHaveVFDSymbol();
+char *_getSoCFamily();
 
 #endif
