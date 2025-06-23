@@ -329,6 +329,11 @@ char *_getMachineName()
 				free(boxtype_name);
 				return strdup("Ustym 4K PRO SINGLE");
 			}
+			else if(startsWith(boxtype_name, "11") && strcmp(BOXTYPE, "sf8008") == 0)
+			{
+				free(boxtype_name);
+				return strdup("SF8008 4K UHD TWIN");
+			}
 			else if(startsWith(boxtype_name, "11"))
 			{
 				free(boxtype_name);
